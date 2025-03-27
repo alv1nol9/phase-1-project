@@ -1,9 +1,21 @@
 .search-bar{
     display: flex;
     text-align: left;
-    max-width: 70px;
-    align-items: center
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+    background-color: yellow;
+    
 }
 #typearea{
-    width: ;
+    border-radius: 7px;
+}
+#search-btn{
+    border-radius: 7px;
+    width: 30px;
+    padding: 5px;
+   
+}
+body{
+    height: 100vh;
 }
