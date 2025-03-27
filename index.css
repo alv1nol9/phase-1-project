@@ -9,6 +9,7 @@
 }
 #typearea{
     border-radius: 7px;
+    height: 40px;
 }
 #search-btn{
     border-radius: 7px;
@@ -18,4 +19,33 @@
 }
 body{
     height: 100vh;
+}
+.display{
+    display: flex;
+    align-items: start;
+    background-color: yellow;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: start;
+
+}
+#description{
+    display: flex;
+    align-items: center;
+}
+button{
+    background-color: black;
+    margin-left: -32px;
+    height: 45px;
+
+}
+#search-btn.hover{
+    background-color: white;
+}
+button.click{
+    background-color: beige;
+}
+#description{
+    display: flex;
+    
 }
