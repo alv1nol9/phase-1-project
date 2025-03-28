@@ -12,7 +12,8 @@ btn.addEventListener("click", async (e) => {
             const weatherData = await getWeatherData(city);
             displayWeatherInfo(weatherData);
         } catch {
-           console.log("Please enter a valid city!");
+           alert
+           ("Please enter a valid city!");
         }
     } else {
         alert("Please enter a city!");
@@ -62,4 +63,6 @@ function displayWeatherInfo(data) {
 
 
 }
+
+
 
