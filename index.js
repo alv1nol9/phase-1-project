@@ -12,7 +12,7 @@ btn.addEventListener("click", async (e) => {
             const weatherData = await getWeatherData(city);
             displayWeatherInfo(weatherData);
         } catch {
-           alert("Please enter a valid city!");
+           console.log("Please enter a valid city!");
         }
     } else {
         alert("Please enter a city!");
@@ -29,7 +29,7 @@ async function getWeatherData(city) {
 }
 
 function displayWeatherInfo(data) {
-  const {name :city, main : {temp,humidity}, weather : [{description,id}], code: cod} = data
+  const {name :city, main : {temp,humidity}, weather : [{description,id}]} = data
 
   const cityDisplay = document.getElementById("city")
   const descriptionDisplay = document.getElementById("description")
@@ -40,6 +40,26 @@ function displayWeatherInfo(data) {
   cityDisplay.textContent = city;
   descriptionDisplay.textContent = description
   tempDisplay.textContent = `${temp}°C`
+  
+  if(data.weather[0].main == "Clear"){
+    imageDisplay.src ="weather/sun.png"
+  }
+ else if(data.weather[0].main === "Rain"){
+    imageDisplay.src ="weather/rain.png"
+  }
+  else if(data.weather[0].main === "Drizzle"){
+    imageDisplay.src ="weather/rain.png"
+  }
+  else if(data.weather[0].main === "Snow"){
+    imageDisplay.src ="weather/snow.png"
+  }
+  else if(data.weather[0].main === "Clouds"){
+    imageDisplay.src ="weather/cloud.png"
+  }
+  else if(data.weather[0].main === "Thunderstorm"){
+    imageDisplay.src ="weather/storm.png"
+  }
+
 
 }
 

@@ -1,17 +1,16 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-
 
 body{
     height: 100vh;
     padding: 20px;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    border-style:groove
- 
+    text-align: center;
+    border-style:groove;
+    background: linear-gradient(gray,white); 
+
 }
 .display{
     display: flex;
@@ -19,9 +18,22 @@ body{
     flex-direction: column;
     text-decoration:wavy;
 }
+
+.weather{
+    width: 250px;
+}
+
 button{
     margin-left: -30px;
 }
 *{
-    font-family: "Pacifico", cursive;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+   
+    mix-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
