@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   <section class="search-bar">
-        <input type="text" id="typearea" placeholder="Enter city name">
-        <div >
-            <button id="search-btn">🔍</button>
-        </div>
-    </section>
-    <section class="display">
-        <div id="card">
-            <img src="Pasted image (2).png" >
-            <p id="description"> temperature <br> Nairobi <br>
-            </p>
-        </div>
-    </section>
+
+   <section id="weather">
+    <form action="">
+        <input type="text" placeholder="Enter City" id="cityInput">
+        
+        <button>
+            🔍
+        </button>
+    </form>
+    <img src="Pasted image (2).png" >
+
+         <div class="display">
+            <h2 id="temp">
+                
+            </h2>
+            <strong><p id="description" ></p></strong>
+               <h2 id="city">
+                
+               </h2>
+         </div>
+   </section>
+   <script src="index.js"></script>
 
 </body>
 </html>

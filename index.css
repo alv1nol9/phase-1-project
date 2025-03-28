@@ -1,51 +1,27 @@
-.search-bar{
-    display: flex;
-    text-align: left;
-    align-items: start;
-    justify-content: center;
-    padding: 10px;
-    background-color: yellow;
-    
-}
-#typearea{
-    border-radius: 7px;
-    height: 40px;
-}
-#search-btn{
-    border-radius: 7px;
-    width: 30px;
-    padding: 5px;
-   
-}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
 body{
     height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:groove
+ 
 }
 .display{
     display: flex;
-    align-items: start;
-    background-color: yellow;
-    margin-top: 5px;
-    justify-content: center;
-    align-items: start;
-
-}
-#description{
-    display: flex;
     align-items: center;
+    flex-direction: column;
+    text-decoration:wavy;
 }
 button{
-    background-color: black;
-    margin-left: -32px;
-    height: 45px;
-
+    margin-left: -30px;
 }
-#search-btn.hover{
-    background-color: white;
-}
-button.click{
-    background-color: beige;
-}
-#description{
-    display: flex;
-    
+*{
+    font-family: "Noto Serif", serif;
 }
