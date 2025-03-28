@@ -2,16 +2,16 @@
 
 
 body{
-    height: 100vh;
+    height: 90vh;
     padding: 20px;
-    display:flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border-style:groove;
-    background:gray; 
-    flex-wrap: wrap-reverse;
-
+    background: gray;
+    border-style: outset;
+    border-radius: 15px;
+    height: 90vh;
 }
 .display{
     display: flex;

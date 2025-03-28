@@ -1,31 +1,31 @@
 const apiKey = "80b66afce1729a18078f9d6874501581";
 const btn = document.querySelector("button");
 const form = document.getElementById("enterCity");
-const input = document.getElementById("cityInput"); // Ensure you have an input field with this ID
+const input = document.getElementById("cityInput"); 
 
 btn.addEventListener("click", async (e) => {
-    e.preventDefault(); // Fix: Added parentheses
+    e.preventDefault();
 
-    const city = input.value.trim(); // Fix: Get input value correctly
+    const city = input.value.trim() 
     if (city) {
         try {
-            const weatherData = await getWeatherData(city);
-            displayWeatherInfo(weatherData);
+            const weatherData = await getWeatherData(city)
+            displayWeatherInfo(weatherData)
         } catch {
            alert
-           ("Please enter a valid city!");
+           ("Please enter a valid city!")
         }
     } else {
-        alert("Please enter a city!");
+        alert("Please enter a city!")
     }
 });
 
 async function getWeatherData(city) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`; // Fix: Correct API URL
-    const response = await fetch(apiUrl);
-    const data = await response.json(); // Fix: Convert response to JSON
-    console.log(data);
-    return data;
+    const response = await fetch(apiUrl)
+    const data = await response.json()
+    console.log(data)
+    return data
   
 }
 
@@ -63,6 +63,7 @@ function displayWeatherInfo(data) {
 
 
 }
+
 
 
 
