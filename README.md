@@ -1,0 +1,1 @@
+This is a weather appication that fetches data about the weather from an external api called openWathermap.
